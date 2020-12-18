@@ -1,6 +1,5 @@
 console.log("20 12 16 JS Classes 02 Practice"); // files linked
 
-
 class TaskList {
     // Define a TaskList class with properties listName, listDue, isListComplete, and tasks. 
     constructor(listName, listDue){
@@ -27,7 +26,7 @@ class TaskList {
     // The viewTasks method will iterate through the list of tasks outputting the message : "Task : [TASKS_ITEM]" on each iteration.
     viewTasks(){
         for(let i = 0; i < this.tasks.length; i++){
-            console.log(`Tasks : ${this.tasks[i]}`);
+            console.log(`Task : ${this.tasks[i]}`);
         }
     }
 }
@@ -35,6 +34,9 @@ class TaskList {
 // Create an instance of the TaskList object called tasksToday with a list name and a due date. 
 let tasksToday = new TaskList("Part Time Program Items", "Tonight at 10PM");
 // console.log(tasksToday);
+
+// View the TaskList object's properties using the correct class method.
+tasksToday.viewListInfo();
 
 // Add three tasks to the tasks array using the correct class method.
 tasksToday.addTask("Grade Primary Assignment");
